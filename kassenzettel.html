@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Website Master-Code">
+	<meta name="keywords" content="Master Code Website">
+	<meta name="author" content="Nattapat Pongsuwan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS Links -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Kassenzettel</title>
+	<link rel="icon" type="image/x-icon" href="../Nattapat_Pongsuwan/img/kassenzettel.ico">
+</head>
+<body onload="preloader()">
+	<div id="preloader">
+		<div class="lds-ripple">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div class="container" id="wrapper">
+		<div class="row">
+			<div class="col-md-3" id="sidebar">
+				<div class="logo">
+					<img src="img/logo.jpg" alt="logo">
+				</div>
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link active" href="index.html"><i class="fal fa-home-alt"></i> Startseite</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html"><i class="fal fa-info"></i> ÜberWebsite</a>
+					</li>
+					<li class="nav-item">						 
+						<a class="nav-link" href="aboutme.html"><i class="fal fa-tasks"></i> Übermich</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html"><i class="fal fa-address-card"></i> Kontakt</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="download.html"><i class="fal fa-download"></i> Download</a>
+					</li>
+				</ul>
+				<i class="far fa-ellipsis-v"></i>
+				<div class="copyright">
+					<p><a href="https://bio.link/xsaitox" target="_blank">&copy; 2023 | Mark</a></p>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div id="main-area">
+					<div class="header-section">
+						<ul class="nav justify-content-center">
+							<li class="nav-item">						 
+								<a class="nav-link active" href="discordbot.html">Discord Bot</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="webseronlinux.html">Linux Webserver</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="minecraftserver.html">Minecraft Server</a>
+							</li>
+							<li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						        Menu
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						        	<a class="dropdown-item" href="https://discord.gg/UjZJZbz47F" target="_blank">My Discord Server</a>
+						        	<a class="dropdown-item" href="https://infernocraft.xsaitokungx.repl.co/#" target="_blank">My Minecraft Server</a>
+						        	<div class="dropdown-divider"></div>
+						        	<a class="dropdown-item" href="kassenzettel.html">Kassenzettel</a>
+						        </div>
+						    </li>
+						</ul>
+						<div class="input-group col-md-6 offset-md-3 search-box">				        
+					        <input type="text" class="form-control" id="search" placeholder="Search.." onkeypress="handleKeyPress(event)" required autocomplete="off">
+					        <div class="input-group-prepend">
+					        	<!-- <i class="fal fa-search" id="searchPrepend" onclick="doSearch()"></i> -->
+								<button class="fal fa-search" id="searchPrepend" onclick="search()"></button>
+					        </div>
+					        <div class="invalid-tooltip">Please choose a unique and valid username.</div>
+					    </div>
+					</div> <!--Header Section End -->
+					<div class="content-section">
+						<div class="section-heading"></div>						
+						<div class="row">
+							<div class="col-md-4 mx-auto">
+								<div class="card" style="width: 100%;">
+									<div class="card-body">
+										<p class="card-text text-truncate" style="height: 1px;">
+                                            <table bordercolor="#000000" border="2" width="200" height="300px">
+
+                                                <tr bordercolor="#9933CC" bgcolor="#FF00FF">
+                                                    <td height="111" colspan="3">
+                                                        <div align="center">
+                                                            <p><strong>HILDEBRAND</strong></p>
+                                                            <p>
+                                                                HAUPTSTR. 6<br>
+                                                                29490 NEU DARCHAU<br>
+                                                                TEL: 0583/225
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr bordercolor="#9933CC" bgcolor="#CC99CC">
+                                                    <td width="131" bordercolor="#993366"><span><strong>Blumen</strong></span></td>
+                                                    <td width="121" bordercolor="#993366"><span>1*</span></td>
+                                                    <td width="121" bordercolor="#993366"><span>4,99€</span></td>
+                                                </tr>
+                                                
+                                                <tr bordercolor="#CC3366" bgcolor="#FFCCFF">
+                                                    <td bordercolor="#993366"><span><strong>Blumen</strong></span></td>
+                                                    <td bordercolor="#993366"><span>1*</span></td>
+                                                    <td bordercolor="#993366"><span>2,79€</span></td>
+                                                </tr>
+
+                                                <tr bordercolor="#9933CC" bgcolor="#CC99CC">
+                                                    <td height="50" bordercolor="#993366"><span><strong>Wein</strong></span></td>
+                                                    <td bordercolor="#993366"><span>5*<br>a 3,45€</span></td>
+                                                    <td bordercolor="#993366"><span>16,45€</span></td>
+                                                </tr>
+                                                
+                                                <tr bordercolor="#CC3366" bgcolor="#FFCCFF">
+                                                    <td bordercolor="#993366"><span><strong>Brot</strong></span></td>
+                                                    <td bordercolor="#993366"><span>1*</span></td>
+                                                    <td bordercolor="#993366"><span>2,50€</span></td>
+                                                </tr>
+
+                                                <tr bordercolor="#9933CC" bgcolor="#CC99CC">
+                                                    <td height="50" bordercolor="#993366"><span><strong>Gemüse</strong></span></td>
+                                                    <td bordercolor="#993366"><span>1*</span></td>
+                                                    <td bordercolor="#993366"><span>1,79€</span></td>
+                                                </tr>
+                                                
+                                                <tr bordercolor="#CC3366" bgcolor="#FFCCFF">
+                                                    <td bordercolor="#993366" colspan="3">
+                                                        <div align="right">Total: 28,52€</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr bordercolor="#993366" bgcolor="#CC99CC">
+                                                    <td colspan="3" bordercolor="#993366">&nbsp;</td>
+                                                </tr>
+
+                                                <tr bordercolor="#CC3366" bgcolor="#FFCCFF">
+                                                    <td colspan="2" bordercolor="#993366"><span><strong>BAR</strong></span></td>
+                                                    <td bordercolor="#993366">
+                                                        <div align="center" >50€</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr bgcolor="#CC99CC">
+                                                    <td colspan="2" bordercolor="#993366"><span><strong>RÜCKGELD</strong></span></td>
+                                                    <td bordercolor="#993366">
+                                                        <div align="center">21.48€</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr bordercolor="#CC3366" bgcolor="#FFCCFF">
+                                                    <td bordercolor="#993366">
+                                                        <div align="center">Verkäufer</div>
+                                                    </td>
+                                                    <td bordercolor="#993366">
+                                                        <div align="center">14.03.23</div>
+                                                    </td>
+                                                    <td bordercolor="#993366">
+                                                        <div align="center">Kasse2</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td bordercolor="#993366" bgcolor="#FFCCFF" colspan="3">
+                                                        <div align="center">Um 14:27 Uhr</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr bordercolor="#CC3366" bgcolor="#CC99CC">
+                                                    <td colspan="3" bordercolor="#993366">
+                                                        <div align="center" class="Stil10">Vielen Dank für Ihren Einkauf!</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+										</p>
+								  	</div>
+								</div>
+							</div>
+					    </div> <!-- Content Section End -->
+					<div class="footer">
+						<div class="row">				
+							<div class="col-lg-4 col-md-12 order-lg-2">
+								<div class="pagination">
+									<ul>
+										<li><a href="kassenzettel.html" class="previous">&laquo; Prev</a></li>
+										<li><a href="kassenzettel.html" class="active">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#" class="next">Next &raquo;</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-8 col-md-12 order-lg-1 social-links">
+								<div class="social-links">
+									<a href="https://infernocraft.xsaitokungx.repl.co/#" target="_blank">
+										<i class="fas fa-globe"></i> Minecraft Website
+									</a>
+									<a href="mailto:markungphim@gmail.com">
+										<i class="fal fa-envelope"></i> Email
+									</a>
+									<a href="https://web.facebook.com/Markung.NP" target="_blank">
+										<i class="fab fa-facebook"></i> Facebook
+									</a>
+								</div>								
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<!-- JS Script Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/custom-function.js"></script>
+</body>
+</html>

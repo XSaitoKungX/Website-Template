@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Website Master-Code">
+	<meta name="keywords" content="Website Master-Code">
+	<meta name="author" content="Nattapat Pongsuwan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS Links -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Kontakt</title>
+	<link rel="icon" type="image/x-icon" href="../Nattapat_Pongsuwan/img/contact.ico">
+</head>
+<body onload="preloader()">
+	<div id="preloader">
+		<div class="lds-ripple">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div class="container" id="wrapper">
+		<div class="row">
+			<div class="col-md-3" id="sidebar">
+				<div class="logo">
+					<img src="img/logo.jpg" alt="logo">
+				</div>
+				<ul class="nav flex-column">
+					<li class="nav-item">						 
+						<a class="nav-link" href="index.html"><i class="fal fa-home-alt"></i> Startseite</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html"><i class="fal fa-info"></i> Überwebsite</a>
+					</li>
+					<li class="nav-item">						 
+						<a class="nav-link" href="aboutme.html"><i class="fal fa-tasks"></i> Übermich</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="contact.html"><i class="fal fa-address-card"></i> Kontakt</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="download.html"><i class="fal fa-download"></i> Download</a>
+					</li>
+				</ul>
+				<i class="far fa-ellipsis-v"></i>
+				<div class="copyright">
+					<p><a href="https://bio.link/xsaitox" target="_blank">&copy; 2023 | Mark</a></p>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div id="main-area">
+					<div class="content-section contact">						
+						<div class="row">
+							<div class="col-md-5 order-md-2">
+								<div class="card" style="width: 100%;">
+									<div class="card-body">
+								        <h5 class="card-title">For Web Development</h5>
+								        <img src="img/logo.jpg" alt="logo">
+								        <p class="card-text"><i class="fal fa-envelope"></i> <a href="mailto:markungphim@gmail.com" style="color:#fff;">markungphim@gmail.com</a></p>
+								        <p class="card-text">
+								        	<a href="https://www.facebook.com/Markung.NP" style="color: mediumblue;">
+								        		<i class="fab fa-facebook"></i> Follow Facebook Page
+								        	</a>
+								        </p>
+								        <p class="card-text">
+								        	<a href="https://discord.gg/UjZJZbz47F" style="color: darkblue;">
+								        		<i class="fal fa-link"></i> Discord
+								        	</a>
+								        </p>
+								     </div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-7 order-lg-1">
+								<div class="card" style="width: 100%;">
+									<div class="section-description">
+										<h2 class="display-4"><i class="fal fa-pencil"></i> Kontaktiere Mich</h2>
+									</div>
+									<form method="post" name="contact" id="contact-form" enctype="multipart/form-data" action="https://formspree.io/f/xleklekw" onsubmit="return showConfirmation()">
+										<div class="form-group">
+											<label for="name">Dein Name:</label>
+											<input type="text" id="name" name="name" class="form-control" required>
+										</div>
+										<div class="form-group">
+											<label for="email">Deine Email:</label>
+											<input type="email" id="email" name="email" class="form-control" required>
+											<small class="form-text text-muted">Deine Daten werden nicht an Drittanbieter weitergegeben</small>
+										</div>
+										<div class="form-group">
+											<label for="message">Nachricht:</label>
+											<textarea name="message" id="message" class="form-control" required></textarea>
+										</div>
+										<div class="form-group">                  
+											<button type="submit" name="contact_submit" class="btn btn-primary btn-sm">Senden</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>						
+					</div> <!-- Content Section End -->
+					<div class="footer">
+						<div class="row">													
+							<div class="col-lg-4 col-md-12 order-lg-2"></div>
+							<div class="col-lg-8 col-md-12 order-lg-1 social-links">
+								<div class="social-links">
+									<a href="https://infernocraft.xsaitokungx.repl.co/#" target="_blank">
+										<i class="fas fa-globe"></i> Minecraft Website
+									</a>
+									<a href="mailto:markungphim@gmail.com">
+										<i class="fal fa-envelope"></i> Email
+									</a>
+									<a href="https://www.facebook.com/Markung.NP" target="_blank">
+										<i class="fab fa-facebook"></i> Facebook
+									</a>
+								</div>								
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<!-- JS Script Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/custom-function.js"></script>
+</body>
+</html>

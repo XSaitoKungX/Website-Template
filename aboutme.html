@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Website Master-Code">
+	<meta name="keywords" content="Website Master-Code">
+	<meta name="author" content="Nattapat Pongsuwan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS Links -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Über Mich</title>
+	<link rel="icon" type="image/x-icon" href="../Nattapat_Pongsuwan/img/aboutme.ico">
+</head>
+<body onload="preloader()">
+	<div id="preloader">
+		<div class="lds-ripple">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div class="container" id="wrapper">
+		<div class="row">
+			<div class="col-md-3" id="sidebar">
+				<div class="logo">
+					<img src="img/logo.jpg" alt="logo">
+				</div>
+				<ul class="nav flex-column">
+					<li class="nav-item">						 
+						<a class="nav-link" href="index.html"><i class="fal fa-home-alt"></i> Startseite</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html"><i class="fal fa-info"></i> ÜberWebsite</a>
+					</li>
+					<li class="nav-item">						 
+						<a class="nav-link active" href="aboutme.html"><i class="fal fa-tasks"></i> Übermich</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html"><i class="fal fa-address-card"></i> Kontakt</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="download.html"><i class="fal fa-download"></i> Download</a>
+					</li>
+				</ul>
+				<i class="far fa-ellipsis-v"></i>
+				<div class="copyright">
+					<p><a href="https://bio.link/xsaitox" target="_blank">&copy; 2023 | Mark</a></p>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div id="main-area">
+					<div class="header-section">
+						<ul class="nav justify-content-center">
+							<li class="nav-item">						 
+								<a class="nav-link active" href="discordbot.html">Discord Bot</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="webseronlinux.html">Linux Webserver</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="minecraftserver.html">Minecraft Server</a>
+							</li>
+							<li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						        Menu
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						        	<a class="dropdown-item" href="https://discord.gg/UjZJZbz47F" target="_blank">My Discord Server</a>
+						        	<a class="dropdown-item" href="https://infernocraft.xsaitokungx.repl.co/#" target="_blank">My Minecraft Server</a>
+						        	<div class="dropdown-divider"></div>
+						        	<a class="dropdown-item" href="kassenzettel.html">Kassenzettel</a>
+						        </div>
+						    </li>
+						</ul>
+						<div class="input-group col-md-6 offset-md-3 search-box">				        
+					        <input type="text" class="form-control" id="search" placeholder="Search.." onkeypress="handleKeyPress(event)" required autocomplete="off">
+					        <div class="input-group-prepend">
+					        	<!-- <i class="fal fa-search" id="searchPrepend" onclick="doSearch()"></i> -->
+								<button class="fal fa-search" id="searchPrepend" onclick="search()"></button>
+					        </div>
+					        <div class="invalid-tooltip">Please search for aboutme, download, tutorials, projects.</div>
+					    </div>
+					</div> <!--Header Section End -->
+					<div class="content-section">
+						<div class="section-heading">
+							<h2 class="display-4"><i class="fal fa-tasks small"></i> Über Mich</h2>
+							<a href="all-projects.html">Alle Projekte <i class="fal fa-list"></i></a>
+						</div>						
+						<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+						    	<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+						    	<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+						    	<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+							</ol>
+						  	<div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<div class="row">
+								    	<div class="col-md-4">
+											<div class="card" style="width: 100%;">
+												<a href="https://github.com/XSaitoKungX" target="_blank">
+													<img class="card-img-top d-block w-100" src="img/Github.png" alt="Card image cap">
+												</a>
+												<div class="card-body ">
+													<h5 class="card-text text-truncate">
+														GitHub Projekt
+													</h5>
+											  	</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="card" style="width: 100%;">
+												<a href="https://github.com/XSaitoKungX" target="_blank">
+													<img class="card-img-top d-block w-100" src="img/Github.png" alt="Card image cap">
+												</a>
+												<div class="card-body ">
+													<h5 class="card-text text-truncate">
+														GitHub Projekt
+													</h5>
+											  	</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="card" style="width: 100%;">
+												<a href="https://github.com/XSaitoKungX" target="_blank">
+													<img class="card-img-top d-block w-100" src="img/Github.png" alt="Card image cap">
+												</a>
+												<div class="card-body ">
+													<h5 class="card-text text-truncate">
+														GitHub Projekt
+													</h5>
+											  	</div>
+											</div>
+										</div>
+									</div>
+							    </div>
+							    <div class="carousel-item">
+							    	<div class="row">
+								    	<div class="col-md-4">
+											<div class="card" style="width: 100%;">
+												<a href="https://github.com/XSaitoKungX" target="_blank">
+													<img class="card-img-top d-block w-100" src="img/Github.png" alt="Card image cap">
+												</a>
+												<div class="card-body ">
+													<h5 class="card-text text-truncate">
+														GitHub Projekt
+													</h5>
+											  	</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="card" style="width: 100%;">
+												<a href="https://github.com/XSaitoKungX" target="_blank">
+													<img class="card-img-top d-block w-100" src="img/Github.png" alt="Card image cap">
+												</a>
+												<div class="card-body ">
+													<h5 class="card-text text-truncate">
+														GitHub Projekt
+													</h5>
+											  	</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="card" style="width: 100%;">
+												<a href="https://github.com/XSaitoKungX" target="_blank">
+													<img class="card-img-top d-block w-100" src="img/Github.png" alt="Card image cap">
+												</a>
+												<div class="card-body ">
+													<h5 class="card-text text-truncate">
+														GitHub Projekt
+													</h5>
+											  	</div>
+											</div>
+										</div>									
+									</div>
+							    </div>
+						  	</div>
+						  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<div class="content-section about">						
+							<div class="row">
+								<div class="col-lg-10 col-md-12 offset-lg-1">
+									<div class="card">
+									  <div class="card-body">
+										<h5 class="card-title">Vorstellung</h5>
+										<p class="card-text">
+											Mein vollständiger Name ist Nattapat Pongsuwan, allerdings kann man mich auch Mark nennen. Ich bin 18 Jahre alt und habe am 22.09.04 Geburtstag.
+											Ich komme ursprünglich aus Thailand, wohne aber schon seit 4 Jahren in Deutschland. Um genauer zu sein, wohne ich in Lüneburg (Niedersachsen).
+											Ich muss ehrlich zugeben, dass ich mich hier ziemlich gut eingelebt habe. Am Anfang ist es schon schwierig für mich, 
+											da ich davor noch kein Deutsch gesprochen habe. 
+											Also habe ich vom Grund aus neu Deutsch gelernt. Nach einer Weile konnte ich alles gut verstehen und mit anderen kommunizieren. 
+										</p>
+										<p>	
+											In meiner Freizeit programmiere ich gerne. Manchmal mache ich auch Sport, wobei das eigentlich ganz selten vorkommt. 
+											Bin momentan echt richtig faul, was das angeht Musik höre ich auch gerne, sowie Anime & Filme + Serie gucken und Mangas lesen. 
+											Ich spiele momentan sehr aktiv Valorant und Minecraft. Ansonstens spiele ich noch Roblox, Osu, Tower of Fantasy und Geshin Impact.
+										</p>
+										<p>	
+											Hm.. Das sollte erstmal reichen. Bei Fragen, könnt ihr mich gern Privat anschreiben. 
+											Auf der linken Seite (Navigationsleiste) siehst du "Contact". Da sind meine ganzen Kontaktdaten. 
+											Am meisten bin ich auf Discord online (Gefühl 24/7). Über den Link kommt ihr direkt auf meinem Server! 
+											Also zügere dich nicht, mich anzuschreiben
+										</p>
+									  </div>
+									</div>
+								</div>					
+							</div>
+					</div> <!-- Content Section End -->
+					<div class="footer">
+						<div class="row">													
+							<div class="col-lg-4 col-md-12 order-lg-2"></div>
+							<div class="col-lg-8 col-md-12 order-lg-1 social-links">
+								<div class="social-links">
+									<a href="https://infernocraft.xsaitokungx.repl.co/#" target="_blank">
+										<i class="fas fa-globe"></i> Minecraft Website
+									</a>
+									<a href="mailto:markungphim@gmail.com">
+										<i class="fal fa-envelope"></i> Email
+									</a>
+									<a href="https://facebook.com/Markung.NP" target="_blank">
+										<i class="fab fa-facebook"></i> Facebook
+									</a>
+								</div>								
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<!-- JS Script Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/custom-function.js"></script>
+</body>
+</html>

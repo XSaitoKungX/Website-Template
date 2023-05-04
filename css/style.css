@@ -99,6 +99,10 @@ body{
     text-decoration: dashed;
 }
 
+.hide-text {
+  display: none;
+}
+
 .show-text {
 	white-space: normal !important;
     height: auto !important;
